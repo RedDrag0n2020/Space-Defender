@@ -52,7 +52,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4930d9b5fb107548941e0cdbba955c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path0Waypoints: []
+  Path0Waypoints:
+  - {fileID: 4614494543394334, guid: a343c37f9c2135e4ab14f0e5dcf3daed, type: 2}
+  - {fileID: 4798912712185576, guid: a343c37f9c2135e4ab14f0e5dcf3daed, type: 2}
+  - {fileID: 4546138722937150, guid: a343c37f9c2135e4ab14f0e5dcf3daed, type: 2}
+  moveSpeed: 5
 --- !u!212 &212700478294336342
 SpriteRenderer:
   m_ObjectHideFlags: 1
