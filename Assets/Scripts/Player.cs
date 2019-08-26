@@ -30,8 +30,7 @@ public class Player : MonoBehaviour {
 	void Start () {
 
         SetUpMoveBoundaries();
-
-        
+               
     }
 
     
@@ -41,8 +40,7 @@ public class Player : MonoBehaviour {
 
         Move();
         Fire();
-       
-        
+               
 	}
 
    
