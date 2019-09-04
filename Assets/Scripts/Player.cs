@@ -57,6 +57,8 @@ public class Player : MonoBehaviour {
 
             StopCoroutine(firingCoroutine);
         }
+
+        
     }
 
     IEnumerator FireContinuously()
@@ -76,6 +78,7 @@ public class Player : MonoBehaviour {
     private void Move()
     {
         var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        //var deltaX = Input.GetAxis("LeftJoystickHorizontal") * Time.deltaTime * moveSpeed;
         var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
