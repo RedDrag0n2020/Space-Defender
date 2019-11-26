@@ -571,17 +571,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114595291659564006, guid: 580eac0aa3c232846b87c1e898d3e70a,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114065731718480590, guid: 580eac0aa3c232846b87c1e898d3e70a,
-        type: 2}
-      propertyPath: enemyLaserPrefab
-      value: 
-      objectReference: {fileID: 1905794041170448, guid: 3dcb7cb1d26e8644eaca2036f56e761d,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580eac0aa3c232846b87c1e898d3e70a, type: 2}
   m_IsPrefabAsset: 0

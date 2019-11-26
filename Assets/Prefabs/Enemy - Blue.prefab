@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114595291659564006}
   - component: {fileID: 114065731718480590}
   - component: {fileID: 58667304082573600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy - Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371111111938132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4930d9b5fb107548941e0cdbba955c8, type: 3}
   m_Name: 

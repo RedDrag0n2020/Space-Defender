@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114997085136836686}
   - component: {fileID: 114455720823974328}
   - component: {fileID: 58825736591109886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy - Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
-  enemyLaserPrefab: {fileID: 1934889208235882, guid: 4989a98d49f973241b62ab54ce33029a,
+  enemyLaserPrefab: {fileID: 1027338767835706, guid: 166129cfd325b0f4d8cfbd09b4f486cc,
     type: 2}
   projectileSpeed: 10
 --- !u!114 &114997085136836686

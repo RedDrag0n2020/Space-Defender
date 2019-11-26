@@ -58,6 +58,8 @@ public class Enemy : MonoBehaviour {
     {
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
 
+       if(!damageDealer) { return; }
+        
         ProcessHit(damageDealer);
 
     }
@@ -66,6 +68,7 @@ public class Enemy : MonoBehaviour {
     {
         health -= damageDealer.GetDamage();
 
+        damageDealer.Hit();
 
         if (health <= 0)
 
