@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour {
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] GameObject enemyLaserPrefab;
     [SerializeField] float projectileSpeed = 10f;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float durationOfExplosion = 1f;
     
 
 
@@ -47,9 +49,16 @@ public class Enemy : MonoBehaviour {
         if (health <= 0)
 
         {
-            Destroy(gameObject);
+            Die();
 
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, durationOfExplosion);
     }
 
     private void CountDownandShoot()
