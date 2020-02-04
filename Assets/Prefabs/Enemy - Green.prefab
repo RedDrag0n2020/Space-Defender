@@ -76,6 +76,8 @@ MonoBehaviour:
   enemyLaserPrefab: {fileID: 1027338767835706, guid: 166129cfd325b0f4d8cfbd09b4f486cc,
     type: 2}
   projectileSpeed: 10
+  deathVFX: {fileID: 1134450015196642, guid: ea75d2da12c35e54fa4cf2447e861011, type: 2}
+  durationOfExplosion: 1
 --- !u!114 &114997085136836686
 MonoBehaviour:
   m_ObjectHideFlags: 1
