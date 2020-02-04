@@ -14,6 +14,10 @@ public class Player : MonoBehaviour
     [SerializeField] float xPadding = 0.9f;
     [SerializeField] float yPadding = 0.9f;
     [SerializeField] int health = 200;
+    [SerializeField] GameObject deathVFXPlayer;
+    [SerializeField] float durationOfExplosionPlayer = 1f;
+    [SerializeField] AudioClip explosionAudioClipPlayer;
+    [SerializeField] float explosionVolumePlayer = 0.7f;
 
     [Header("Projectile")]
 
@@ -127,8 +131,18 @@ public class Player : MonoBehaviour
         if (health <= 0)
 
         {
-            Destroy(gameObject);
+            Die();
 
         }
+    }
+
+    private void Die()
+
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFXPlayer, transform.position, transform.rotation);
+        Destroy(explosion, durationOfExplosionPlayer);
+        AudioSource.PlayClipAtPoint(explosionAudioClipPlayer, Camera.main.transform.position, explosionVolumePlayer);
+
     }
 }

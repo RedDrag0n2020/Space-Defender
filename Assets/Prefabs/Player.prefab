@@ -104,6 +104,12 @@ MonoBehaviour:
   xPadding: 0.9
   yPadding: 1.5
   health: 500
+  deathVFXPlayer: {fileID: 1134450015196642, guid: ea75d2da12c35e54fa4cf2447e861011,
+    type: 2}
+  durationOfExplosionPlayer: 1
+  explosionAudioClipPlayer: {fileID: 8300000, guid: 8524588a69a4f3e40bb597b6221138f1,
+    type: 3}
+  explosionVolumePlayer: 0.7
   laserPrefab: {fileID: 1863832891805642, guid: c6702e851c56d114e83a54a0468ccde8,
     type: 2}
   projectileSpeed: 10
