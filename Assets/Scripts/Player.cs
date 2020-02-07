@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
+    [SerializeField] AudioClip laserFireAudioClip;
+    [SerializeField] float laserFireVolume = 0.4f;
 
     Coroutine firingCoroutine;
 
@@ -83,6 +85,8 @@ public class Player : MonoBehaviour
             GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
 
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+
+            AudioSource.PlayClipAtPoint(laserFireAudioClip, Camera.main.transform.position, laserFireVolume);
 
             yield return new WaitForSeconds(projectileFiringPeriod);
         }

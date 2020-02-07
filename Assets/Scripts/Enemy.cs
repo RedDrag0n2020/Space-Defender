@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour {
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] AudioClip explosionAudioClip;
     [SerializeField] float explosionVolume = 0.7f;
+    [SerializeField] AudioClip laserFireAudioClip;
+    [SerializeField] float laserFireVolume = 0.4f;
 
 
 
@@ -83,9 +85,12 @@ public class Enemy : MonoBehaviour {
         GameObject enemyLaser = Instantiate(enemyLaserPrefab, transform.position, Quaternion.identity) as GameObject;
 
         enemyLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
-        
 
-        
+        AudioSource.PlayClipAtPoint(laserFireAudioClip, Camera.main.transform.position, laserFireVolume);
+
+
+
+
     }
 
    
