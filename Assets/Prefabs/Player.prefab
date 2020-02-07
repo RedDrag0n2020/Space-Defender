@@ -114,6 +114,8 @@ MonoBehaviour:
     type: 2}
   projectileSpeed: 10
   projectileFiringPeriod: 0.1
+  laserFireAudioClip: {fileID: 8300000, guid: 873b95e75ef854e45a5ab57d1ddf971c, type: 3}
+  laserFireVolume: 0.4
 --- !u!212 &212953082991164964
 SpriteRenderer:
   m_ObjectHideFlags: 1
