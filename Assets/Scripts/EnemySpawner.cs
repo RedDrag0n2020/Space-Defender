@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
+    // ***** THERE IS A PROBLEM WITH THE PATHS (PATH 2 DOES NOT SPAWN ENEMIES AND PATH WAVEPOINTS CANNOT BE MOVED)
+    
     // Configuration parameters
 
     [SerializeField] List<WaveConfig> waveConfigs;
