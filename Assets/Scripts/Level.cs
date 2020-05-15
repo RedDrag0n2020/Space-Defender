@@ -42,6 +42,13 @@ public class Level : MonoBehaviour {
 
 	}
 
+	public void LoadCredits()
+
+	{
+
+		SceneManager.LoadScene("Credits");
+
+	}
 	public void QuitGame()
 
 	{
