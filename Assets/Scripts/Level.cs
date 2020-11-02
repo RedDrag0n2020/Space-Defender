@@ -31,6 +31,7 @@ public class Level : MonoBehaviour {
 	{
 
 		SceneManager.LoadScene("Game");
+		FindObjectOfType<GameController>().ResetGame();
 
 	}
 

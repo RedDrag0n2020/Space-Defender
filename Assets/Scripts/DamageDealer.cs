@@ -9,8 +9,7 @@ public class DamageDealer : MonoBehaviour
 
     public int GetDamage()
 
-    {
-        return damage;
+    {        return damage;
 
     }
 
