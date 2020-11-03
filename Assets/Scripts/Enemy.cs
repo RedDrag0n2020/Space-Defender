@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour {
 
     [Header("Shooting")]
 
-    [SerializeField] float shotCounter;
+    float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] GameObject enemyLaserPrefab;
